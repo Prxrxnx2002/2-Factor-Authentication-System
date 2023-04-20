@@ -1,0 +1,64 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30-Nov-2022, 3:03:13 pm
+    Author     : Prerana
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.abc{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(background.jpg);
+    background-position: center;
+    background-size:cover;
+    position: absolute;
+}
+.form-box {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  /*background: white;*/
+  padding: 5px;
+  /*overflow: hidden;*/
+}
+.input-grp{
+    top: 150px;
+    position:absolute;
+    width: 280px;
+    transition:.5s;
+ }
+.input-field{
+    width: 150%;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+.submit-btn{
+    width: 150%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#01D9D4,#0090C2,#0062B7,#7521AA);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-weight:bold;
+    
+}

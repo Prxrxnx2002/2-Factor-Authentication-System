@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attendance</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="attendancecss.css">
+    </head>
+    <body>
+        <div class="abc">
+            <div class="form-box">
+                <form id="attendance" class="input-grp" method="post" action="RecordAttendance">
+                   <input name="uname" type="text" class="input-field" placeholder="Username" required/>
+                    <br><br><br><br>
+                    <input type="radio" name="attendanceStatus" value="present">Present
+                    <br>
+                    <input type="radio" name="attendanceStatus" value="absent">Absent
+                     <input type="hidden" name="date" id="date">
+                     <input type="hidden" name="time" id="time">
+                     <br><br><br><br>
+                    <input type="submit" class="submit-btn" value="Submit"/>           
+                </form>
+                <script>
+                var currentDate = new Date().toISOString().slice(0, 10);
+                var currentTime = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                document.getElementById("date").value = currentDate;
+                document.getElementById("time").value = currentTime;
+                </script>
+            </div>
+        </div>
+</body>
+</html>
